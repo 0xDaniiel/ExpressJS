@@ -47,10 +47,10 @@ To get started with this project, follow the steps below:
   **Usage**
   Once the application is running, you can access the following routes:
   
-  GET /: Returns a welcome message.
-  GET /api/data: Fetches sample data.
-  POST /api/data: Accepts data from the request body and returns it.
-  Feel free to modify or add routes according to your needs.
+  - GET /: Returns a welcome message.
+  - GET /api/data: Fetches sample data.
+  - POST /api/data: Accepts data from the request body and returns it.
+  - Feel free to modify or add routes according to your needs.
 
 
 
