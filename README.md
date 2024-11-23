@@ -6,7 +6,7 @@ This repository aims to provide a basic understanding of how to use Express.js i
 ## Prerequisites
 
 You are expected to have a foundational understanding of **Node.js**. If you're new to Node.js or need a refresher, please refer to the
- [Node JS for beginners](https://github.com/1am-programmer/NodeJS). This resource covers essential Node.js concepts to get you started.
+ [Node JS course](https://github.com/1am-programmer/NodeJS). This resource covers essential Node.js concepts to get you started.
 
 ## Features
 
