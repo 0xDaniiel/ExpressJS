@@ -1,4 +1,4 @@
-# Express.js Project
+# Express.js Course 
 
 This repository contains a project built with **Express.js**, a web framework for **Node.js**. Express simplifies the process of building robust and scalable web applications, 
 This repository aims to provide a basic understanding of how to use Express.js in combination with Node.js.
@@ -6,7 +6,7 @@ This repository aims to provide a basic understanding of how to use Express.js i
 ## Prerequisites
 
 You are expected to have a foundational understanding of **Node.js**. If you're new to Node.js or need a refresher, please refer to the
- [Node JS repo for beginners](https://github.com/1am-programmer/NodeJS). This resource covers essential Node.js concepts to get you started.
+ [Node JS for beginners](https://github.com/1am-programmer/NodeJS). This resource covers essential Node.js concepts to get you started.
 
 ## Features
 
