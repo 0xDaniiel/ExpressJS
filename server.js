@@ -2,17 +2,11 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const app = express();
-const port = process.env.PORT;
-
-/*
-// This is required for using __dirname in ES module format
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-// Serve static files from the "public" folder
-app.use(express.static(path.join(__dirname, "public")));
-//To get the about page, just add /abouthtml to the url
-*/
+
+const app = express();
+const port = process.env.PORT;
 
 let posts = [
   {
@@ -32,10 +26,32 @@ let posts = [
   },
 ];
 
-// Json api
+// Serve static files from the "public" folder
+app.use(express.static(path.join(__dirname, "public")));
+//To get the about page, just add /abouthtml to the url
+
+// Get all posts
 app.get("/api/posts", (req, res) => {
   res.json(posts);
 });
+
+// Get single post via id
+app.get("/api/posts/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+
+  // Find the post with the given id
+  const post = posts.find((post) => post.id === id);
+
+  if (post) {
+    // Return the post if found
+    res.json(post);
+  } else {
+    // Return error if post is not found
+    res.status(404).json({ error: "Post not found" });
+  }
+});
+
+
 // Start the server
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
